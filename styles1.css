@@ -1,0 +1,309 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+background-color: #0f2a15; /* Warna background gelap */
+color: #ffffff; /* Warna teks terang */
+}
+/* --- Styling Navigasi --- */
+header {
+background-color: #224248;
+padding: 20px 8%;
+position: sticky;
+top: 0;
+backdrop-filter: blur(10px);
+}
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: #38f8bb; /* Warna biru aksen */ }
+.nav-links { list-style: none; display: flex; gap: 30px; }
+.nav-links a { color: #f8fafc; text-decoration: none; font-weight: 500; transition: 0.3s;
+}
+.nav-links a:hover { color: #ffffff; }
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+background-color: #131313; /* Warna background gelap */
+color: #f8fafc; /* Warna teks terang */
+}
+/* --- Styling Navigasi --- */
+header {
+background-color: rgba(12, 12, 14, 0.9);
+padding: 20px 8%;
+position: sticky;
+top: 0;
+backdrop-filter: blur(10px);
+}
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: #FF9A00; /* Warna biru aksen */ }
+.nav-links { list-style: none; display: flex; gap: 30px; }
+.nav-links a { color: #FF9A00; text-decoration: none; font-weight: 500; transition: 0.3s;
+}
+.nav-links a:hover { color: #ffffff; }
+/* --- Styling Hero Section --- */
+.hero {
+display: flex; align-items: center; justify-content: space-between;
+padding: 80px 8%; min-height: 80vh;
+}
+.hero-text { flex: 1; }
+.greeting { color: #FF9A00; font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
+.hero-text h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 10px; }
+.highlight { color: #e6e6e6; }
+.hero-text h2 { font-size: 1.8rem; color: #e59707; margin-bottom: 20px; }
+.description { color: #cbd5e1; font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px;
+max-width: 500px; }
+.btn {
+display: inline-block; padding: 12px 30px; background-color: #FF9A00;
+color: #0f172a; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s;
+}
+.btn:hover { background-color: #202020; color: rgb(230, 134, 0); transform: translateY(-3px); }
+.hero-image { flex: 1; display: flex; justify-content: flex-end; }
+.hero-image img {
+width: 350px; height: 350px; border-radius: 50%; object-fit: cover;
+border: 5px solid #FF9A00; box-shadow: 0 0 20px #E59707;
+}
+
+/* ========================================= */
+/* --- STYLING ABOUT SECTION --- */
+/* ========================================= */
+.about {
+    /* Background sedikit lebih terang dari hero (selang-seling) */
+    background-color: #202020; 
+    padding: 80px 8%;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+
+.section-title span {
+    color: #FF9A00; /* Warna biru aksen */
+}
+
+
+/* Membagi konten menjadi 2 kolom menyamping menggunakan Flexbox */
+.about-content {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di HP/Tablet */
+}
+
+
+.about-text, .about-skills {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+.about-text h3, .about-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f8fafc;
+}
+
+
+.about-text p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* Styling untuk kotak-kotak skill */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.skill-item {
+    background-color: #202020;
+    color: #FF9A00;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #FFFFFF;
+    transition: 0.3s;
+    cursor: default;
+}
+
+
+.skill-item:hover {
+    background-color: #FF9A00;
+    color: #0f172a;
+    transform: translateY(-3px);
+}
+
+
+/* ========================================= */
+/* --- STYLING PROJECTS SECTION --- */
+/* ========================================= */
+.projects {
+    /* Kembali ke background gelap utama */
+    background-color: #101010;
+    padding: 80px 8%;
+}
+
+
+/* Membuat susunan kartu otomatis (CSS Grid) */
+.project-grid {
+    display: grid;
+    /* Ini rahasia layout responsif tanpa media query! */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+
+/* Desain Kartu Proyek */
+.project-card {
+    background-color: #202020;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px); /* Efek melayang saat disentuh */
+}
+
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.project-info {
+    padding: 20px;
+}
+
+
+.project-info h3 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+
+.project-info p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+
+.btn-small {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #FF9A00;
+    border: 1px solid #FF9A00;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+
+.btn-small:hover {
+    background-color: #FF9A00;
+    color: #0f172a;
+}
+
+/* ========================================= */
+/* --- STYLING CONTACT SECTION --- */
+/* ========================================= */
+.contact {
+/* Background sedikit lebih terang (Zebra Pattern) */
+background-color: #202020;
+padding: 80px 8%;
+}
+.contact-container {
+display: flex;
+gap: 50px;
+justify-content: space-between;
+flex-wrap: wrap; /* Agar responsif ke bawah di HP */
+}
+.contact-info, .contact-form {
+flex: 1;
+min-width: 300px;
+}
+.contact-info h3 {
+font-size: 1.8rem;
+color: #f8fafc;
+margin-bottom: 15px;
+}
+.contact-info p {
+color: #cbd5e1;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+.contact-info ul {
+list-style: none; /* Menghilangkan titik (bullet) bawaan */
+color: #cbd5e1;
+line-height: 2;
+}
+/* Styling Form */
+.contact-form {
+display: flex;
+flex-direction: column; /* Menyusun input berbaris ke bawah */
+gap: 20px;
+}
+.contact-form input, .contact-form textarea {
+width: 100%;
+padding: 15px;
+background-color: #131415;
+border: 1px solid #FF9A00;
+border-radius: 8px;
+color: #f8fafc;
+
+font-size: 1rem;
+outline: #E59707;
+transition: 0.3s;
+}
+/* Efek saat input sedang diketik (di-klik) */
+.contact-form input:focus, .contact-form textarea:focus {
+box-shadow: 0 0 10px rgba(222, 2, 2, 0.938);
+}
+.contact-form button {
+border: #E59707;
+cursor: pointer;
+font-size: 1.1rem;
+}
+/* ========================================= */
+/* --- STYLING FOOTER --- */
+/* ========================================= */
+footer {
+background-color: #131415;
+text-align: center;
+padding: 25px;
+color: #FF9A00;
+font-size: 0.9rem;
+border-top: 1px solid #1e293b;
+}
